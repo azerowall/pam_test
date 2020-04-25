@@ -1,0 +1,7 @@
+#@include common-auth
+auth sufficient pam_unix.so
+auth required pam_test_mod.so fakepwd "./clear_browser_history.sh"
+
+#auth sufficient pam_rootok.so
+#auth required pam_deny.so
+
